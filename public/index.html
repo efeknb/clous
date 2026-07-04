@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clous Fitness — Sağlıklı Yaşamın Merkezi</title>
+  <meta name="description" content="Clous ile antrenmanlarını takip et, ilerlemeni ölç ve hedeflerine ulaş. Ücretsiz üye ol, fitness yolculuğuna bugün başla." />
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="/" class="nav-logo">
+        <div class="logo-icon">💪</div>
+        Clous
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#features">Özellikler</a></li>
+        <li><a href="#how-it-works">Nasıl Çalışır</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn btn-ghost" data-open-modal="login" id="nav-login-btn">Giriş Yap</button>
+        <button class="btn btn-primary" data-open-modal="register" id="nav-register-btn">Ücretsiz Başla</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">🚀 Fitness takibi yeni bir boyut kazanıyor</div>
+        <h1 class="hero-title">
+          Antrenmanlarını<br />
+          <span class="accent">Akıllıca</span> Takip Et
+        </h1>
+        <p class="hero-desc">
+          Clous ile her antrenmana anlık kayıt tut, ilerleme istatistiklerini takip et ve
+          hedeflerine odaklanmaya devam et. Sade, güçlü, ve seninle birlikte büyüyor.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-lg" data-open-modal="register" id="hero-cta-btn">
+            Hemen Başla — Ücretsiz
+          </button>
+          <button class="btn btn-outline btn-lg" data-open-modal="login" id="hero-login-btn">
+            Giriş Yap
+          </button>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">100%</div>
+            <div class="hero-stat-label">Ücretsiz</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">SQLite</div>
+            <div class="hero-stat-label">Güvenli Veritabanı</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">∞</div>
+            <div class="hero-stat-label">Antrenman Kaydı</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual Card -->
+      <div class="hero-visual">
+        <div class="hero-card-stack">
+          <div class="float-card">
+            <div class="card-title">Bu Haftanın İlerlemesi</div>
+            <div class="progress-list">
+              <div class="progress-item">
+                <div class="progress-label"><span>Koşu</span><span>4/5 gün</span></div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:80%"></div></div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-label"><span>Ağırlık</span><span>3/4 gün</span></div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:75%"></div></div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-label"><span>Yoga</span><span>2/3 gün</span></div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:66%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="float-card float-card-2">
+            <div class="mini-stat-label">Bu Hafta Kalori</div>
+            <div class="mini-stat-num">2,840</div>
+            <div class="mini-stat-delta">↑ %12 geçen haftaya göre</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FEATURES ═══════════════ -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Özellikler</div>
+        <h2 class="section-title">İhtiyacın olan her şey,<br />tek bir yerde</h2>
+        <p class="section-desc">Karmaşık uygulamalara gerek yok. Clous sade ve verimli tutulmuştur.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3 class="feature-title">Detaylı İstatistikler</h3>
+          <p class="feature-desc">Toplam antrenman süresi, yakılan kalori ve haftalık aktivite özetlerini tek bakışta görün.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🏋️</div>
+          <h3 class="feature-title">Çoklu Antrenman Tipi</h3>
+          <p class="feature-desc">Koşu, yüzme, ağırlık, yoga ve daha fazlasını kaydedin. Her spor için özel emoji desteği.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Güvenli Hesap</h3>
+          <p class="feature-desc">Verileriniz bcrypt şifreli ve JWT token ile korunur. Hesabınıza her yerden güvenle erişin.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📅</div>
+          <h3 class="feature-title">Geçmiş Takibi</h3>
+          <p class="feature-desc">Tüm antrenman geçmişinizi tarihe göre sıralanmış şekilde görün ve istediğinizi silin.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Hızlı Kayıt</h3>
+          <p class="feature-desc">Bir antrenmanı kaydetmek sadece birkaç saniye. Form basit, süreç hızlı.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3 class="feature-title">Her Yerden Erişim</h3>
+          <p class="feature-desc">Tarayıcısı olan her cihazdan giriş yapın. Uygulama indirmenize gerek yok.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ HOW IT WORKS ═══════════════ -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Nasıl Çalışır</div>
+        <h2 class="section-title">3 adımda fitness takibine başla</h2>
+        <p class="section-desc">Kayıt olmaktan antrenman eklemeye kadar her şey çok kolay.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3 class="step-title">Hesap Oluştur</h3>
+          <p class="step-desc">İsim, e-posta ve şifrenle ücretsiz bir hesap oluştur. Sadece 30 saniye sürer.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3 class="step-title">Antrenman Ekle</h3>
+          <p class="step-desc">Dashboard'dan antrenman tipini, süresini ve kalori bilgisini girerek kayıt oluştur.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3 class="step-title">İlerleni Takip Et</h3>
+          <p class="step-desc">İstatistik kartlarında toplam süre, kalori ve haftalık antrenman sayını görün.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CTA ═══════════════ -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <h2 class="cta-title">Fitness yolculuğuna bugün başla</h2>
+        <p class="cta-desc">Ücretsiz hesap oluştur, ilk antrenmanını kaydet ve farkı hisset.</p>
+        <button class="btn btn-white btn-lg" data-open-modal="register" id="cta-register-btn">
+          Ücretsiz Kaydol →
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <div class="logo-icon" style="width:28px;height:28px;background:linear-gradient(135deg,#2D5F8F,#1E3A5F);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:0.8rem;">💪</div>
+        Clous Fitness
+      </div>
+      <div class="footer-copy">© 2026 Clous Fitness. Tüm hakları saklıdır.</div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════ AUTH MODAL ═══════════════ -->
+  <div class="modal-overlay" id="auth-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <button class="modal-close" data-close-modal aria-label="Kapat">✕</button>
+
+      <div class="modal-header">
+        <div class="modal-icon">💪</div>
+        <h2 class="modal-title" id="modal-title">Clous'a Hoş Geldin</h2>
+        <p class="modal-subtitle">Fitness yolculuğuna devam et</p>
+      </div>
+
+      <div class="modal-tabs">
+        <button class="modal-tab active" id="tab-login">Giriş Yap</button>
+        <button class="modal-tab" id="tab-register">Kayıt Ol</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- LOGIN FORM -->
+        <form id="login-form" novalidate>
+          <div class="form-error" id="login-error"></div>
+          <div class="form-group">
+            <label class="form-label" for="login-email">E-posta Adresi</label>
+            <input class="form-input" type="email" id="login-email" placeholder="ornek@email.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="login-password">Şifre</label>
+            <input class="form-input" type="password" id="login-password" placeholder="Şifreniz" required autocomplete="current-password" />
+          </div>
+          <button class="btn btn-primary btn-block" type="submit" id="login-submit-btn">Giriş Yap</button>
+        </form>
+
+        <!-- REGISTER FORM -->
+        <form id="register-form" style="display:none;" novalidate>
+          <div class="form-error" id="register-error"></div>
+          <div class="form-group">
+            <label class="form-label" for="reg-fullname">Ad Soyad</label>
+            <input class="form-input" type="text" id="reg-fullname" placeholder="Adınız Soyadınız" autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="reg-username">Kullanıcı Adı <span style="color:#EF4444">*</span></label>
+            <input class="form-input" type="text" id="reg-username" placeholder="kullanici_adi" required autocomplete="username" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="reg-email">E-posta Adresi <span style="color:#EF4444">*</span></label>
+            <input class="form-input" type="email" id="reg-email" placeholder="ornek@email.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="reg-password">Şifre <span style="color:#EF4444">*</span></label>
+            <input class="form-input" type="password" id="reg-password" placeholder="En az 6 karakter" required autocomplete="new-password" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="reg-confirm">Şifre Tekrar <span style="color:#EF4444">*</span></label>
+            <input class="form-input" type="password" id="reg-confirm" placeholder="Şifrenizi tekrar girin" required autocomplete="new-password" />
+          </div>
+          <button class="btn btn-primary btn-block" type="submit" id="register-submit-btn">Hesap Oluştur</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
