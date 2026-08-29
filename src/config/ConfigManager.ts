@@ -19,7 +19,7 @@ export class ConfigManager {
   private defaults: Map<string, string | number | boolean> = new Map();
   private encryption: EncryptionHelper | null = null;
   private envPath: string;
-  private env: string;
+  private env: string; 
   private loaded: boolean = false;
 
   constructor(
