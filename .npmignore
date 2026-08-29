@@ -1,0 +1,25 @@
+# Source
+src/
+tests/
+
+# Config
+tsconfig*.json
+.eslintrc*
+.prettierrc*
+jest.config.*
+
+# Development
+.git/
+.github/
+.vscode/
+.idea/
+coverage/
+docs/
+
+# Environment
+.env*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
