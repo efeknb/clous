@@ -4,10 +4,8 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
-import * as os from 'os';
 import { WriteAheadLog } from './WriteAheadLog';
 import { CheckpointManager } from './CheckpointManager';
-import { Checksum } from '../utils/Checksum';
 import { EventBus } from '../utils/EventBus';
 import type { ModuleLogger } from '../utils/Logger';
 import type { StoreConfig, Checkpoint, StoreStats } from '../types';
@@ -470,7 +468,9 @@ export class SafeStore {
       if (fs.existsSync(tempPath)) {
         try {
           fs.unlinkSync(tempPath);
-        } catch {}
+        } catch {
+          // Ignore cleanup errors
+        }
       }
       this.logger.error(`Failed to persist collection: ${collection}`, {
         error: (error as Error).message,

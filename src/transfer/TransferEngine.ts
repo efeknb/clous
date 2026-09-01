@@ -4,7 +4,6 @@
 
 import * as http from 'http';
 import * as https from 'https';
-import * as url from 'url';
 import { RetryManager } from './RetryManager';
 import { CircuitBreaker } from './CircuitBreaker';
 import { RateLimiter } from './RateLimiter';
