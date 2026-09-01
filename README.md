@@ -2,21 +2,17 @@
 
 > Advanced Data Processing Automation and Data Loss Prevention System
 
-[![npm version](https://badge.fury.io/js/clous.svg)](https://badge.fury.io/js/clous)
-[![Tests](https://img.shields.io/badge/tests-116%2F116-brightgreen)](https://github.com/efeknb/clous)
-[![Coverage](https://img.shields.io/badge/coverage-78.46%25-yellowgreen)](https://github.com/efeknb/clous)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 **Clous** is a comprehensive TypeScript library for reliable data processing with built-in safeguards:
 
-- 📝 **Write-Ahead Log (WAL)** - Durable data writes with recovery
-- 🔄 **Checkpoint & Rollback** - Data recovery and versioning
-- 🔌 **Circuit Breaker** - Fault tolerance and resilience
-- 🔁 **Retry Mechanism** - Exponential backoff and automatic retries
-- ⏱️ **Rate Limiting** - Token bucket algorithm for request throttling
-- 🔐 **AES-256-GCM Encryption** - Secure configuration management
-- 📊 **Event System** - Observable data transformations
-- 📝 **Winston Logging** - Comprehensive logging with multiple levels
+- **Write-Ahead Log (WAL)** - Durable data writes with recovery
+-  **Checkpoint & Rollback** - Data recovery and versioning
+-  **Circuit Breaker** - Fault tolerance and resilience
+- **Retry Mechanism** - Exponential backoff and automatic retries
+-  **Rate Limiting** - Token bucket algorithm for request throttling
+-  **AES-256-GCM Encryption** - Secure configuration management
+-  **Event System** - Observable data transformations
+-  **Winston Logging** - Comprehensive logging with multiple levels
 
 Perfect for building robust data pipelines, ETL systems, and critical data processing applications.
 
@@ -306,19 +302,6 @@ See our [Development Plan](https://github.com/efeknb/clous/issues/4) for planned
 - Webhook system
 - Performance profiling tools
 
-## License
-
-MIT License © 2024 [Efe Kaya](https://github.com/efeka)
-
-## Support
-
-- 📖 [Documentation](https://github.com/efeknb/clous#readme)
-- 🐛 [Issue Tracker](https://github.com/efeknb/clous/issues)
-- 💬 [Discussions](https://github.com/efeknb/clous/discussions)
-
-## Changelog
-
-See [CHANGELOG.md](CHANGELOG.md) for version history and breaking changes.
 
 ---
 
