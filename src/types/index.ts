@@ -2,8 +2,6 @@
 // Clous — Type Definitions
 // ============================================
 
-import type EventEmitter from 'eventemitter3';
-
 // ── General ──────────────────────────────────
 
 export type LogLevel = 'error' | 'warn' | 'info' | 'debug' | 'verbose';
