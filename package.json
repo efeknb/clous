@@ -1,6 +1,6 @@
 {
   "name": "clous",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Advanced data processing automation and data loss prevention system. Provides WAL, checkpoint/rollback, circuit breaker, retry mechanisms, and .env configuration management.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -47,16 +47,16 @@
     "transfer",
     "data-integrity"
   ],
-  "author": "efeka",
+  "author": "efeknb",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/efeka/clous.git"
+    "url": "https://github.com/efeknb/clous.git"
   },
   "bugs": {
-    "url": "https://github.com/efeka/clous/issues"
+    "url": "https://github.com/efeknb/clous/issues"
   },
-  "homepage": "https://github.com/efeka/clous#readme",
+  "homepage": "https://github.com/efeknb/clous#readme",
   "engines": {
     "node": ">=16.0.0"
   },
