@@ -1,5 +1,5 @@
 {
-  "name": "clous",
+  "name": "clous-cli",
   "version": "1.0.1",
   "description": "Advanced data processing automation and data loss prevention system. Provides WAL, checkpoint/rollback, circuit breaker, retry mechanisms, and .env configuration management.",
   "main": "./dist/cjs/index.js",
