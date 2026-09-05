@@ -76,5 +76,19 @@
     "rimraf": "^5.0.7",
     "ts-jest": "^29.2.0",
     "typescript": "^5.5.0"
+  },
+  "overrides": {
+    "function-bind": "npm:@socketregistry/function-bind@^1",
+    "hasown": "npm:@socketregistry/hasown@^1",
+    "is-core-module": "npm:@socketregistry/is-core-module@^1",
+    "path-parse": "npm:@socketregistry/path-parse@^1",
+    "safe-buffer": "npm:@socketregistry/safe-buffer@^1"
+  },
+  "resolutions": {
+    "function-bind": "npm:@socketregistry/function-bind@^1",
+    "hasown": "npm:@socketregistry/hasown@^1",
+    "is-core-module": "npm:@socketregistry/is-core-module@^1",
+    "path-parse": "npm:@socketregistry/path-parse@^1",
+    "safe-buffer": "npm:@socketregistry/safe-buffer@^1"
   }
 }
