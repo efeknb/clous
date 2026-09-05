@@ -1,7 +1,7 @@
 # Clous 
 [![Socket Badge](https://badge.socket.dev/npm/package/clous-cli/1.0.1)](https://badge.socket.dev/npm/package/clous-cli/1.0.1)
 
-> Advanced Data Processing Automation and Data Loss Prevention System
+> Clous is a Node.js/TypeScript library designed to securely manage data pipelines, ETL systems, and critical data flows.
 
 
 **Clous** is a comprehensive TypeScript library for reliable data processing with built-in safeguards:
