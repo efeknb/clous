@@ -48,6 +48,7 @@ export class ConfigManager {
     if (fs.existsSync(envSpecificPath)) {
       this.loadEnvFile(envSpecificPath);
       this.logger.debug(`Loaded environment-specific config: ${envSpecificPath}`);
+      this.logger.debug(`Environment: ${this.env}`);
     }
 
     // Override from process.env (environment variables take precedence)

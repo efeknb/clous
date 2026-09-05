@@ -71,6 +71,10 @@ describe('EncryptionHelper', () => {
   });
 });
 
+
+
+
+
 describe('ConfigManager', () => {
   let configManager: ConfigManager;
   let events: EventBus;
@@ -211,3 +215,10 @@ describe('ConfigManager', () => {
     expect(encConfig.get('CLOUS_DB_URL')).toBe('secret-db-url');
   });
 });
+
+function expect<T>(actual: T): any {
+  return (globalThis as typeof globalThis & {
+    expect: (value: T) => any;
+  }).expect(actual);
+}
+
