@@ -3,6 +3,12 @@
   "compilerOptions": {
     "module": "ESNext",
     "moduleResolution": "node",
-    "outDir": "./dist/esm"
+    "outDir": "./dist/esm",
+    "baseUrl": "./src",
+    "ignoreDeprecations": "5.0",
+    "paths": {
+      "@app/*": ["app/*"],
+      "@lib/*": ["lib/*"]
+    }
   }
 }
