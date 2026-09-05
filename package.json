@@ -1,6 +1,6 @@
 {
   "name": "clous-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Advanced data processing automation and data loss prevention system. Provides WAL, checkpoint/rollback, circuit breaker, retry mechanisms, and .env configuration management.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -68,14 +68,14 @@
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "@types/node": "^20.14.0",
-    "@typescript-eslint/eslint-plugin": "^7.0.0",
-    "@typescript-eslint/parser": "^7.0.0",
-    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.1",
     "jest": "^29.7.0",
     "prettier": "^3.3.0",
     "rimraf": "^5.0.7",
     "ts-jest": "^29.2.0",
-    "typescript": "^5.5.0"
+    "typescript": "~5.7.3"
   },
   "overrides": {
     "function-bind": "npm:@socketregistry/function-bind@^1",

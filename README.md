@@ -1,4 +1,5 @@
 # Clous 
+[![Socket Badge](https://badge.socket.dev/npm/package/clous-cli/1.0.1)](https://badge.socket.dev/npm/package/clous-cli/1.0.1)
 
 > Advanced Data Processing Automation and Data Loss Prevention System
 
