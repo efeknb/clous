@@ -1,4 +1,4 @@
-# Clous 🚀
+# Clous 
 
 > Advanced Data Processing Automation and Data Loss Prevention System
 
@@ -65,7 +65,7 @@ await clous.shutdown();
 
 ## Core Modules
 
-### 🔧 Configuration Management
+### Configuration Management
 ```typescript
 const config = new ConfigManager({ envPath: './.env' });
 
@@ -77,7 +77,7 @@ config.set('DEBUG_MODE', 'true');
 const encrypted = config.get('API_KEY', { encrypted: true });
 ```
 
-### 📊 Data Pipeline
+### Data Pipeline
 ```typescript
 // Transform data
 const numbers = [1, 2, 3, 4, 5];
@@ -100,7 +100,7 @@ const processor = new BatchProcessor({ batchSize: 100, concurrency: 3 });
 processor.process(largeArray, item => processItem(item));
 ```
 
-### 💾 Safe Store
+### Safe Store
 ```typescript
 const store = new SafeStore({ directory: './data', walEnabled: true });
 await store.init();
@@ -121,7 +121,7 @@ const stats = store.getStats();
 console.log(`Total collections: ${stats.totalCollections}`);
 ```
 
-### 🚀 Transfer Engine
+### Transfer Engine
 ```typescript
 const engine = new TransferEngine({
   retryAttempts: 3,
@@ -148,7 +148,7 @@ if (result.success) {
 }
 ```
 
-### 🔄 Resilience Patterns
+### Resilience Patterns
 
 #### Retry with Exponential Backoff
 ```typescript
@@ -282,25 +282,11 @@ Clous is designed for high-throughput scenarios:
 
 ## Security
 
-- ✅ AES-256-GCM encryption for sensitive config values
-- ✅ No sensitive data in logs by default
-- ✅ Input validation and sanitization
-- ✅ Safe serialization/deserialization
+- AES-256-GCM encryption for sensitive config values
+- No sensitive data in logs by default
+- Input validation and sanitization
+- Safe serialization/deserialization
 
-## Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-## Roadmap
-
-See our [Development Plan](https://github.com/efeknb/clous/issues/4) for planned features and improvements.
-
-### Planned Features
-- Distributed tracing support
-- Database adapters (PostgreSQL, MongoDB)
-- gRPC endpoints
-- Webhook system
-- Performance profiling tools
 
 
 ---
