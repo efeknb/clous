@@ -745,6 +745,45 @@ Input data size is limited by available memory when using in-memory pipelines. F
 
 The system can process thousands of items per batch and handle high-concurrency scenarios. Batch sizes and concurrency levels should be tuned based on your specific hardware and workload characteristics.
 
+## Command-Line Interface
+
+Clous includes an interactive terminal client for inspecting and operating the system without writing a separate application. After building or installing the package, run:
+
+```bash
+clous
+```
+
+The dashboard uses a small color theme, works without additional terminal frameworks, and falls back to plain text when ANSI color is unavailable. From the main menu, enter:
+
+| Key | Action |
+| --- | --- |
+| `p` | Run a pipeline with JSON input |
+| `s` | Save a JSON value to a store collection |
+| `c` | Create a store checkpoint |
+| `t` | Send JSON data through the transfer engine |
+| `r` | View circuit breaker and rate limiter statistics |
+| `e` | View environment configuration |
+| `h` or `?` | Show help |
+| `q` | Shut down and exit |
+
+The same operations are available as one-shot commands for scripts and automation:
+
+```bash
+clous --help
+clous status
+clous config
+clous config validate
+clous store list
+clous store get users user-123
+clous store save users user-123 '{"name":"Ada"}'
+clous checkpoint list
+clous checkpoint create
+clous checkpoint restore <checkpoint-id>
+clous transfer https://api.example.com/import '{"items":[1,2,3]}'
+```
+
+The CLI initializes the same `ClousClient` used by the library, so WAL behavior, checkpoints, retry handling, circuit breaking, rate limiting, logging, and persistence remain consistent between terminal usage and application code. Store data defaults to `./clous-data`; set `CLOUS_STORE_DIR` to use another location. Set `NO_COLOR=1` for plain output.
+
 ## Support and Contributing
 
 For issues, questions, or contributions, visit the GitHub repository at https://github.com/efeknb/clous
