@@ -17,9 +17,9 @@ import type { ConfigManagerOptions, ConfigSchema } from '../types';
 export class ConfigManager {
   private values: Map<string, string> = new Map();
   private defaults: Map<string, string | number | boolean> = new Map();
-  private encryption: EncryptionHelper | null = null;
-  private envPath: string;
-  private env: string; 
+  private readonly encryption: EncryptionHelper | null = null;
+  private readonly envPath: string;
+  private readonly env: string;
   private loaded: boolean = false;
 
   constructor(

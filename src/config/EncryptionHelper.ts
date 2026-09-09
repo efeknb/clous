@@ -2,7 +2,7 @@
 // Clous — EncryptionHelper (AES-256-GCM)
 // ============================================
 
-import * as crypto from 'crypto';
+import * as crypto from 'node:crypto';
 
 const ALGORITHM = 'aes-256-gcm';
 const IV_LENGTH = 16;
@@ -15,7 +15,10 @@ const ENCRYPTED_PREFIX = 'ENC:';
  * AES-256-GCM encryption helper for securing sensitive configuration values.
  */
 export class EncryptionHelper {
-  private key: Buffer;
+  set key(value: Buffer) {
+    this._key = value;
+  }
+  private _key: Buffer;
 
   constructor(encryptionKey: string) {
     if (!encryptionKey || encryptionKey.length < 8) {
@@ -23,7 +26,7 @@ export class EncryptionHelper {
     }
     // Derive a 256-bit key from the passphrase
     const salt = crypto.createHash('sha256').update(encryptionKey).digest();
-    this.key = crypto.pbkdf2Sync(encryptionKey, salt, ITERATIONS, KEY_LENGTH, 'sha512');
+    this._key = crypto.pbkdf2Sync(encryptionKey, salt, ITERATIONS, KEY_LENGTH, 'sha512');
   }
 
   /**
@@ -32,7 +35,7 @@ export class EncryptionHelper {
    */
   encrypt(plaintext: string): string {
     const iv = crypto.randomBytes(IV_LENGTH);
-    const cipher = crypto.createCipheriv(ALGORITHM, this.key, iv);
+    const cipher = crypto.createCipheriv(ALGORITHM, this._key, iv);
 
     const encrypted = Buffer.concat([
       cipher.update(plaintext, 'utf8'),
@@ -65,7 +68,7 @@ export class EncryptionHelper {
     const tag = packed.subarray(IV_LENGTH, IV_LENGTH + TAG_LENGTH);
     const ciphertext = packed.subarray(IV_LENGTH + TAG_LENGTH);
 
-    const decipher = crypto.createDecipheriv(ALGORITHM, this.key, iv);
+    const decipher = crypto.createDecipheriv(ALGORITHM, this._key, iv);
     decipher.setAuthTag(tag);
 
     try {

@@ -6,6 +6,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as os from 'os';
 import { ClousClient } from '../src/ClousClient';
+import {config} from 'dotenv';
 
 describe('ClousClient — Integration', () => {
   let clous: ClousClient;
@@ -95,9 +96,9 @@ describe('ClousClient — Integration', () => {
     const cp = await clous.store.checkpoint();
 
     // Modify data
-    await clous.store.save('products', 'p1', { name: 'Widget Pro', price: 14.99 });
+    await clous.store.save('products', 'p1', { name: 'Widget Pro', price: config()});
     await clous.store.delete('products', 'p2');
-    await clous.store.save('products', 'p3', { name: 'New Item', price: 29.99 });
+    await clous.store.save('products', 'p3', { name: 'New Item', price: config() });
 
     // Verify modifications
     expect(clous.store.get('products', 'p1').price).toBe(14.99);
