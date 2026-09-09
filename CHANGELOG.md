@@ -118,6 +118,14 @@ Initial project setup with foundational structure.
 
 ## Upcoming
 
+## Unreleased
+
+### Added
+
+- Interactive `clous` terminal client with keyboard navigation.
+- One-shot commands for status, configuration, storage, checkpoints, and transfers.
+- Shared CLI behavior built on top of `ClousClient`.
+
 See our [Development Plan](https://github.com/efeknb/clous/issues/4) for planned features:
 
 ### Phase 2 (Planned)
